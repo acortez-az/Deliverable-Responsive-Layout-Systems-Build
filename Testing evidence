@@ -18,5 +18,5 @@ The properties (inline-size and block-size) perfectly allow the containers to ex
 
 3. Keyboard focus and accessibility
 * I navigated through interactive elements such as navigation links, cards and buttons using only the TAB key. I verified that all interactive elements
-recieved a clear indicator (:focus-visible) which is defined in the states layer. Focus order works as intended, starting from top to bottom, left to right!
+received a clear indicator (:focus-visible) which is defined in the states layer. Focus order works as intended, starting from top to bottom, left to right!
 
