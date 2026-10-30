@@ -158,6 +158,7 @@ table {
         transition: transform 0.2s ease, box-shadow 0.2s ease;
         display: flex;
         flex-direction: column;
+        container-type: inline-size;
     }
 
     .card-banner {
