@@ -326,6 +326,13 @@ table {
         }
     }
 
+    @supports not (container-type: inline-size) {
+        .feature-card {
+            display: block;
+        }
+    }
+}
+
 /* PRINT */
 
 @layer print {
