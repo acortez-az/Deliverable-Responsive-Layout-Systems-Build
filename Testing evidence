@@ -1,0 +1,22 @@
+1. Viewport Testing
+* Narrow viewport (Mobile)
+I verified that the .green-nav successfully shifts from a horizontal layout to 
+a hamburger vertical flex stack. Gallery and feature cards also collapse into a single-column layout
+using the auto-fit and minimax() grid settings to prevent any clipping or overflows
+
+* Medium viewport (Tablet)
+Cards turned into multi-column grids as expected. PAdding scales fluidly using the custom properties i applied
+as well as spacing.
+
+* Wide viewport (Desktop)
+The main container successfully adheres to the max-inline-size: 1200px constraint rule I applied. This makes the content
+center nice and neatly on the page with balanced spacing.
+
+2. Zoom testing
+* I zoomed the browser (firefox) to the max 200% zoom settings. I observed that the page layout reflows neatly without breaking text boundaries or overlapping elements
+The properties (inline-size and block-size) perfectly allow the containers to expand naturally without text scaling and none of the contents within clipping.
+
+3. Keyboard focus and accessibility
+* I navigated through interactive elements such as navigation links, cards and buttons using only the TAB key. I verified that all interactive elements
+recieved a clear indicator (:focus-visible) which is defined in the states layer. Focus order works as intended, starting from top to bottom, left to right!
+
