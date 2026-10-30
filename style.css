@@ -105,12 +105,17 @@ table {
 
 @layer layout {
     .top-bar, .green-nav, .main-content, .features-section, .downloads-main-content, .site-footer {
-        width: 100%;
+        inline-size: 100%;
+        max-inline-size: 1200px;
+        margin-inline: auto;
+        padding-inline: var(--spacing-md);
         box-sizing: border-box;
     }
 
     .gallery-grid, .features-container, .downloads-card-grid {
         display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: var(--spacing-md);
     }
 }
 
