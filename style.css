@@ -148,6 +148,13 @@ table {
         transition: transform 0.2s ease;
     }
 
+    .features-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-rows: auto auto 1fr;
+        gap: var(--spacing-md);
+    }
+
     .feature-card {
         background-color: #ffffff;
         border: 3px solid #fef08a;
@@ -155,11 +162,9 @@ table {
         text-decoration: none;
         overflow: hidden;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-        display: flex;
-        flex-direction: column;
-        container-type: inline-size;
-    }
+        display: grid;
+        grid-row: span 3;
+        grid-template-rows: subgrid;
 
     .card-banner {
         background: linear-gradient(to bottom, var(--color-primary, #3b82f6), var(--color-primary-dark, #1d4ed8));
@@ -183,6 +188,7 @@ table {
         flex-direction: column;
         justify-content: space-between;
     }
+}
 
     @container (min-width: 400px) {
         .card-body {
