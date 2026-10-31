@@ -165,6 +165,7 @@ table {
         display: grid;
         grid-row: span 3;
         grid-template-rows: subgrid;
+    }
 
     .card-banner {
         background: linear-gradient(to bottom, var(--color-primary, #3b82f6), var(--color-primary-dark, #1d4ed8));
@@ -195,7 +196,7 @@ table {
             background-color: #f8fafc;
             padding: var(--spacing-lg);
         }
-    }
+    
 
     .back-to-top-btn {
         position: fixed;
